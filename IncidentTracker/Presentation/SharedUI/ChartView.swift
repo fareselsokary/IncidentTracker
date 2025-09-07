@@ -63,24 +63,6 @@ struct ChartView: View {
     }
 }
 
-// MARK: - ChartDataPoint
-
-/// Represents a single data point in the chart.
-struct ChartDataPoint: Identifiable {
-    let id = UUID()
-    let label: String
-    let value: Double
-}
-
-// MARK: - ChartData
-
-/// Container for chart configuration and data.
-struct ChartData {
-    let xAxisTitle: String?
-    let yAxisTitle: String?
-    let dataPoints: [ChartDataPoint]
-}
-
 // MARK: - Preview
 
 #Preview {
